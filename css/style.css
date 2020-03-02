@@ -49,3 +49,23 @@ ul{
     display: flex;
     justify-content: space-around;
 }
+.banner{
+    width: 100%;
+    height: 400px;
+    background-image: url("../images/Imagens/meta_mundo.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 14px;
+    border-radius: 8px;
+}
+.banner .btn{
+    margin-top: 257px;
+}
