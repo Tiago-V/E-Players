@@ -183,3 +183,42 @@ ul{
 .times{
     margin: 2em 0;
 }
+footer{
+    box-shadow: 0 0 10px #000;
+    color: white;
+    margin-top: 50px;
+    background-color: rgb(0, 0, 0);
+}
+footer a{
+    color: white;
+    text-decoration: none; 
+}
+footer ul{
+    list-style-type: none;  
+}
+footer .sociais{
+    display: flex;
+    justify-content: space-evenly;
+    color: var(--purple);
+    font-size: 2em;
+    padding: 1em 0px;
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+footer h5{
+    padding-bottom: 1.2em;
+    color: #474747;
+    font-size: 1.5em;
+}
+footer h6{
+    text-align: end;
+    font-size: 0.9em;
+}
+.copy{
+    text-align: center;
+    color: #505050;
+    font-size: 1.2em;
+}
