@@ -311,3 +311,38 @@ fieldset label{
     margin-top: 1.2em;
     cursor: pointer;
 }
+/* Responsividade */
+/* 1200px */
+@media screen and (max-width: 1200px){
+    .campea{
+        right: 0%;
+    }
+    .sobre .container div{
+        width:50%;
+    }
+    .container {
+        width: 95%;
+    }
+}
+/* /1200px */
+
+/* 768px */
+@media screen and (max-width: 768px){
+    header img{
+        max-width: 180px;
+    }
+    .container {
+        width: 98%;
+    }
+    .campea{
+        max-width: 500px;
+        margin-top: 50px;
+        right: -20px;
+    }
+    .sobre .container div{
+        width: 55%;
+        margin-top: 100px;
+        margin-left: 30px;
+    }
+}
+/* /768px */
