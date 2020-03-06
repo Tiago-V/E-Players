@@ -42,7 +42,7 @@ ul{
     padding: 20px 0px;
     box-shadow: 0px 13px 10px rgba(0, 0, 0, 0.5);
 }
-.cabecalho nav{
+#menu{
     width: 60%;
 }
 .cabecalho ul{
@@ -311,6 +311,12 @@ fieldset label{
     margin-top: 1.2em;
     cursor: pointer;
 }
+.cabecalho .fa-bars{
+    color: var(--purple);
+    font-size: 2em;
+    display: none;
+}
+
 /* Responsividade */
 /* 1200px */
 @media screen and (max-width: 1200px){
@@ -335,14 +341,92 @@ fieldset label{
         width: 98%;
     }
     .campea{
-        max-width: 500px;
-        margin-top: 50px;
-        right: -20px;
+        max-width: 300px;
+        margin-top: 150px;
+        right: 5px;
+    }
+    .sobre{
+        padding: 100px 0px;
     }
     .sobre .container div{
         width: 55%;
-        margin-top: 100px;
+        /* margin-top: 100px; */
         margin-left: 30px;
+    }
+    .aovivo{
+        padding: 5.3em 5px;
+        width: 50%;
+        flex-wrap: wrap;
+    }
+    .embreve{
+        width: 50%;
+        flex-wrap: wrap;
+    }
+    .embreve .partida{
+        margin: 0.5em 0;
+    }
+    .news{
+        flex-direction: column;
+    }
+    /* Noticias */
+    .card{
+        display: flex;
+        width: 100%;
+    }
+    .card img{
+        width: 50%;
+    }
+    /* /Noticias */
+    footer .container{
+        padding: 1em 0.5em;
+    }
+    footer .logo{
+        width: 15em;
+    }
+    footer .sociais{
+        padding: 0.3em 0;
+    }
+    footer h5{
+        padding-bottom: 0,5em;
     }
 }
 /* /768px */
+@media screen and (max-width: 460px){
+    .cabecalho .fa-bars{
+        display: block;
+    }
+    .cabecalho div{
+        width: 100%;        
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 2em;
+    }
+    #menu{
+        position: absolute;
+        top: 72px;
+        background-color:rgba(1, 1, 21, 0.85);
+        width: 100%;
+        display: none;
+
+    }
+    .cabecalho ul{
+        flex-direction: column;
+        height: 225px;
+    }
+    .cabecalho ul a{
+        padding: 0.5em 100% 1em 2em;
+        margin: 0.1em 0;
+        margin-left: 0.5em;
+
+    }
+    .campea{
+        display: none;
+    } 
+    .card{
+        display:block;
+    }
+    .card img{
+        width: 100%
+    }
+}
