@@ -36,9 +36,9 @@
             <h1>Cadastro de Jogador</h1>
         </div>
 
-        <form action="" method="post">
+        <form action="" method="post" class="formcadastro">
             <div class="campo">
-                <label for="nome">nome do jogador</label>
+                <label for="nome">Nome do Jogador</label>
                 <input type="text" name="nomedojogador" id="nome">
             </div>
 
@@ -48,28 +48,29 @@
             </div>
 
             <div class="campo">
-                <label for="email">email</label>
+                <label for="email">Email</label>
                 <input type="email" name="email" id="email">
             </div>
             
             <div class="campo">
-                <label for="senha">senha</label>
+                <label for="senha">Senha</label>
                 <input type="password" name="senha" id="senha">
             </div>
 
             <div class="campo">
-                <label for="senhaconfirma">confirmarsenha</label>
+                <label for="senhaconfirma">Confirmar Senha</label>
                 <input type="password" name="senhaconfirma" id="senhaconfirma">
             </div>
 
             <div class="campo">
-                <label for="nascimento">nascimento</label>
-                <input type="date" name="nascimento" id="nascimento">
+                <label for="nascimento">Nascimento</label>
+                <input type="date" name="nascimento" id="nascimento" max="2020-03-05" min="1900-01-01">
             </div>
 
             <div class="campo">
                 <label for="pais">País</label>
                 <select name="pais" id="pais">
+                    <option value="S">Selecione uma opção...    </option>
                     <option value="BR">Brasil</option>
                     <option value="US">Estados Unidos</option>
                     <option value="ES">Es</option>
@@ -79,7 +80,7 @@
             <fieldset>
                 <legend>Sexo</legend>
                 <input type="radio" name="sexo" value="M" id="masculino">
-                <label for="masculino">Masculino</label>3
+                <label for="masculino">Masculino</label>
 
                 <input type="radio" name="sexo" value="F" id="feminino">
                 <label for="feminino">Feminino</label>
@@ -92,12 +93,14 @@
 
             </fieldset>
 
-            <div class="campo">
+            <div class="campo termos">
                 <input type="checkbox" name="check" id="check">
                 <label for="check">
                     Declaro que li e aceito os termos de uso deste site.
                 </label>
             </div>
+
+            <button type="submit" class="btn gradient btn1">Cadastrar</button>
 
         </form>
 

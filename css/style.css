@@ -42,7 +42,7 @@ ul{
     padding: 20px 0px;
     box-shadow: 0px 13px 10px rgba(0, 0, 0, 0.5);
 }
-.cabecalho nav{
+#menu{
     width: 60%;
 }
 .cabecalho ul{
@@ -229,15 +229,241 @@ footer h6{
 
 .titulo_pag{
     width: 100%;
-    height: 320px;
+    height: 340px;
     background-image: url("../images/cadastro.png");
-    background-attachment: fixed;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     color: white;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     text-transform: uppercase;
-    padding-top: 3em;
+    padding-top: 4em;
+}
+.formcadastro{
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 13px 10px rgba(0, 0, 0, 0.5), 0 -6px 15px rgba(114, 119, 195, 0.8);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+    color: white;
+    padding: 1em;
+}
+.campo{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.3em;
+}
+.campo label{
+    text-transform: uppercase;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select{
+    border: none;
+    background-color: var(--background);
+    color: #ccc;
+    border-bottom: 1px solid #474747;
+    width: 60%;
+}
+input[type="date"]{
+    text-align: center;
+    font-size: 1.1em;
+}
+input:focus, select:focus{
+    outline: none;
+    background-color: #252525;
+    box-shadow: 0 0 5px #474747;
+    border-bottom: 1px solid var(--purple);
+    padding: 0.5em;
+}
+fieldset{
+    width: 100%;
+    border: none;
+    margin-bottom: 1.5em;
+}
+fieldset legend{
+    text-transform: uppercase;
+}
+input[type="radio"]{
+    margin-right: 0.1em;
+}
+fieldset label{
+    margin-right: 0.5em;
+}
+.termos{
+    align-items: center;
+    justify-content: start;
+}
+.termos label{
+    text-transform: initial;
+    margin-left: 0.5em;
+}
+.btn1{
+    border: none;
+    width: 45%;
+    margin-top: 1.2em;
+    cursor: pointer;
+}
+.cabecalho .fa-bars{
+    color: var(--purple);
+    font-size: 2em;
+    display: none;
+}
+
+/* Responsividade */
+/* 1200px */
+@media screen and (max-width: 1200px){
+    .campea{
+        right: 0%;
+    }
+    .sobre .container div{
+        width:50%;
+    }
+    .container {
+        width: 95%;
+    }
+}
+/* /1200px */
+
+/* 768px */
+@media screen and (max-width: 768px){
+    header img{
+        max-width: 180px;
+    }
+    .container {
+        width: 98%;
+    }
+    .campea{
+        max-width: 300px;
+        margin-top: 150px;
+        right: 5px;
+    }
+    .sobre{
+        padding: 100px 0px;
+    }
+    .sobre .container div{
+        width: 55%;
+        /* margin-top: 100px; */
+        margin-left: 30px;
+    }
+    .aovivo{
+        padding: 5.3em 5px;
+        width: 50%;
+        flex-wrap: wrap;
+    }
+    .embreve{
+        width: 50%;
+        flex-wrap: wrap;
+    }
+    .embreve .partida{
+        margin: 0.5em 0;
+    }
+    .news{
+        flex-direction: column;
+    }
+    /* Noticias */
+    .card{
+        display: flex;
+        width: 100%;
+    }
+    .card img{
+        width: 50%;
+    }
+    /* /Noticias */
+    footer .container{
+        padding: 1em 0.5em;
+    }
+    footer .logo{
+        width: 15em;
+    }
+    footer .sociais{
+        padding: 0.3em 0;
+    }
+    footer h5{
+        padding-bottom: 0,5em;
+    }
+}
+/* /768px */
+@media screen and (max-width: 460px){
+    .cabecalho .fa-bars{
+        display: block;
+    }
+    .cabecalho div{
+        width: 100%;        
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 2em;
+    }
+    #menu{
+        position: absolute;
+        top: 72px;
+        background-color:rgba(1, 1, 21, 0.85);
+        width: 100%;
+        display: none;
+
+    }
+    .cabecalho ul{
+        flex-direction: column;
+        height: 225px;
+    }
+    .cabecalho ul a{
+        padding: 0.5em 100% 1em 2em;
+        margin: 0.1em 0;
+        margin-left: 0.5em;
+
+    }
+    .campea{
+        display: none;
+    } 
+    .sobre .container div{
+        width: 85%;
+        text-align: justify;
+    }
+    .sobre .container h1{
+        text-align: center;
+        margin-bottom: 1em;
+    }
+    #horarios .container{
+        flex-direction: column;
+    }
+    .aovivo, .embreve{
+        padding: 0em;
+        border: none;
+    }
+    .partida{
+        margin: 2em 0;
+    }
+    .card{
+        flex-direction: column;
+    }
+    .card img{
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+    .news{
+        width: 95%;
+        padding-right: 15px;
+    }
+    .recentes{
+        padding: 0.5em;
+    }
+    .content{
+        flex-direction: column;
+    }
+    footer .logo, footer .sociais{
+        width: 140px;   
+    }
+    footer h5{
+        font-size: 1em;
+        justify-content: space-between;
+    }
 }
