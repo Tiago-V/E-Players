@@ -45,7 +45,7 @@ ul{
 #menu{
     width: 60%;
 }
-.cabecalho ul{
+.cabecalho ul{ 
     display: flex;
     justify-content: space-around;
 }
